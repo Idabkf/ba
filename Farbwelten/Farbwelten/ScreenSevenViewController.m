@@ -68,6 +68,16 @@
     
 }
 
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if (self.panEnabled) {
+        //disable pageViews recognizer
+        [self.rootViewController disablePan];
+        self.panEnabled = NO;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -321,12 +331,6 @@
 }
 
 -(void)handlePan:(UIPanGestureRecognizer *) recognizer{
-    
-    if (self.panEnabled) {
-        //disable pageViews recognizer
-        [self.rootViewController disablePan];
-        self.panEnabled = NO;
-    }
     
     //move center of view
     CGPoint locationInHoleView = [recognizer locationInView:self.view];

@@ -7,6 +7,7 @@
 //
 
 #import "ScreenThirteenViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenThirteenViewController ()
 
@@ -28,6 +29,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self setFigures];
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if (self.panEnabled) {
+        //disable pageViews recognizer
+        [self.rootViewController disablePan];
+        self.panEnabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +94,7 @@
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     NSLog(@"UBOOT TAPPED");
+
     [self.childView removeFromSuperview];
     [UIImageView animateWithDuration:7.0
                                delay:0.0
@@ -91,6 +103,9 @@
                               CGRect rect = CGRectMake(768.0f, 1024.0f, self.groelmView.frame.size.width, self.groelmView.frame.size.height);
                               self.groelmView.frame = rect;
                           }completion:^(BOOL finished){
+                              //enable pageViews recognizer
+                              [self.rootViewController enablePan];
+                              self.panEnabled = YES;
                           }];
 }
 

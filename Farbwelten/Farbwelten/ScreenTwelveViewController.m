@@ -7,6 +7,7 @@
 //
 
 #import "ScreenTwelveViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenTwelveViewController ()
 
@@ -49,6 +50,16 @@
     recognizer.delegate = self;
     [self.view addGestureRecognizer:recognizer];
     
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if (self.panEnabled) {
+        //disable pageViews recognizer
+        [self.rootViewController disablePan];
+        self.panEnabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,25 +107,12 @@
         rect = CGRectMake(750.0f, 300.0f, image.size.width/2, image.size.height/2);
         self.kindView.frame = rect;
         [self.view addSubview:self.kindView];
+        
+        //enable pageViews recognizer
+        [self.rootViewController enablePan];
+        self.panEnabled = YES;
+        
         self.imageFlg = 3;
-    }
-    
-    else if (self.imageFlg == 3) {
-        NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen12-drohgroelm" ofType:@"png"];
-        UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-        [self.groelmView setImage:image];
-        CGRect rect = CGRectMake(80.0f, 150.0f, image.size.width/2, image.size.height/2);
-        self.groelmView.frame = rect;
-        [self.view addSubview:self.groelmView];
-        
-        pathString = [[NSBundle mainBundle] pathForResource:@"Screen12-Kind" ofType:@"png"];
-        image = [UIImage imageWithContentsOfFile:pathString];
-        [self.kindView setImage:image];
-        rect = CGRectMake(765.0f, 326.0f, image.size.width/2, image.size.height/2);
-        self.kindView.frame = rect;
-        [self.view addSubview:self.kindView];
-        
-        self.imageFlg = 0;
     }
     
 }

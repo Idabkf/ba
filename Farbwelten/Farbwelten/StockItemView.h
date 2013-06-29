@@ -14,6 +14,8 @@
 @property CGFloat angle;
 @property CGFloat scale;
 
+@property BOOL rotated;
+
 @property CGRect oldRect;
 @property CGPoint oldCenter;
 

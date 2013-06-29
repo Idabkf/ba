@@ -12,6 +12,7 @@
 @interface ScreenViewController : UIViewController
 
 @property (strong,nonatomic) RootViewController *rootViewController;
+@property BOOL panEnabled;
 
 @property (strong, nonatomic) id dataObject;
 

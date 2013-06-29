@@ -14,8 +14,6 @@
 @property CGRect rectLeft;
 @property CGRect rectRight;
 @property int countFinishedMushrooms;
-@property BOOL panEnabled;
-
 
 @property UIImage *screen1;
 @property UIImage *screen2;

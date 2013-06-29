@@ -16,6 +16,7 @@
     if (self) {
         // Initialization code
         [self setUserInteractionEnabled:YES];
+        self.rotated = NO;
         
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
         panRecognizer.delegate = self;
@@ -48,16 +49,20 @@
 
 -(void)handlePinch:(UIPinchGestureRecognizer *) recognizer{
     
-    if (recognizer.state == UIGestureRecognizerStateBegan){
-        self.oldRect = recognizer.view.frame;
-        self.oldCenter = recognizer.view.center;
+    if (!self.rotated) {
+        if (recognizer.state == UIGestureRecognizerStateBegan){
+            self.oldRect = recognizer.view.frame;
+            self.oldCenter = recognizer.view.center;
+        }
+        
+        else{
+            CGAffineTransform scale = CGAffineTransformMakeScale(recognizer.scale, recognizer.scale);
+            recognizer.view.frame = CGRectApplyAffineTransform(self.oldRect, scale);
+            recognizer.view.center = self.oldCenter;
+        }
     }
     
-    else{
-        CGAffineTransform scale = CGAffineTransformMakeScale(recognizer.scale, recognizer.scale);
-        recognizer.view.frame = CGRectApplyAffineTransform(self.oldRect, scale);
-        recognizer.view.center = self.oldCenter;
-    }
+    
 
     
     /*
@@ -78,6 +83,7 @@
 
 
 -(void)handleRotation:(UIRotationGestureRecognizer *) recognizer{
+    self.rotated = YES;
     recognizer.view.transform = CGAffineTransformMakeRotation(recognizer.rotation);
     /*
     if (recognizer.state == UIGestureRecognizerStateBegan){

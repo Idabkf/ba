@@ -15,6 +15,5 @@
 @property UIImageView *orfView;
 
 @property UIImageView *helpView;
-@property BOOL tappedFlag;
 
 @end

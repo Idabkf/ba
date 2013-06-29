@@ -7,6 +7,7 @@
 //
 
 #import "ScreenSixViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenSixViewController ()
 
@@ -29,7 +30,17 @@
 	// Do any additional setup after loading the view.
     //NSLog(@"FRAME X: %f Y: %f", self.view.frame.size.width, self.view.frame.size.height);
     [self setFigures];
-    self.tappedFlag = false;
+    
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if (self.panEnabled) {
+        //disable pageViews recognizer
+        [self.rootViewController disablePan];
+        self.panEnabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -78,24 +89,23 @@
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
+    
     NSLog(@"ORFVIEW TAPPED");
-    if (self.tappedFlag) {
-        [self.helpView removeFromSuperview];
-        self.tappedFlag = false;
-    }
-    else {
-        //CHILD
-        NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen06-Wald-help" ofType:@"png"];
-        UIImage *image = [UIImage imageWithContentsOfFile:pathString];
-        self.helpView = [[UIImageView alloc]initWithImage:image];
-        CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
-        self.helpView.frame = rect;
-        CGPoint point = CGPointMake(544.0f, 345.5f);
-        [self.helpView setCenter:point];
-        //[self.helpView setUserInteractionEnabled:YES];
-        [(UIImageView *)self.view addSubview:self.helpView];
-        self.tappedFlag = true;
-    }
+   
+    //CHILD
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen06-Wald-help" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    self.helpView = [[UIImageView alloc]initWithImage:image];
+    CGRect rect = CGRectMake(0, 0, image.size.width/2, image.size.height/2);
+    self.helpView.frame = rect;
+    CGPoint point = CGPointMake(544.0f, 345.5f);
+    [self.helpView setCenter:point];
+    //[self.helpView setUserInteractionEnabled:YES];
+    [(UIImageView *)self.view addSubview:self.helpView];
+
+    //enable pageViews recognizer
+    [self.rootViewController enablePan];
+    self.panEnabled = YES;
 }
 
 @end

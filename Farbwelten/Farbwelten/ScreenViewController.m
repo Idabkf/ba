@@ -8,6 +8,7 @@
 
 #import "ScreenViewController.h"
 
+
 @interface ScreenViewController ()
 
 @end
@@ -28,7 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     CGRect bounds = CGRectMake(0.0f, 0.0f, 1536.0f, 2048.0f);
-    [self.view setBounds:bounds];    
+    [self.view setBounds:bounds];
+    self.panEnabled = YES;
     //NSLog(@"BOUNDS X: %f Y: %f", self.view.bounds.size.width, self.view.bounds.size.height);
 }
 

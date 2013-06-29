@@ -43,6 +43,17 @@
     imageView.frame = rect;
     [self.view addSubview:imageView];
 }
+/*Weiterblättern immer möglich
+ -(void) viewDidAppear:(BOOL)animated{
+ [super viewDidAppear:animated];
+ 
+ if (self.panEnabled) {
+ //disable pageViews recognizer
+ [self.rootViewController disablePan];
+ self.panEnabled = NO;
+ }
+ }
+ */
 
 - (void)didReceiveMemoryWarning
 {

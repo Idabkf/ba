@@ -7,6 +7,7 @@
 //
 
 #import "ScreenFourteenViewController.h"
+#import "RootViewController.h"
 
 @interface ScreenFourteenViewController ()
 
@@ -27,6 +28,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    if (self.panEnabled) {
+        //disable pageViews recognizer
+        [self.rootViewController disablePan];
+        self.panEnabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning

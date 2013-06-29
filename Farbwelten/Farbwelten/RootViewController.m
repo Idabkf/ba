@@ -43,7 +43,7 @@
     DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
      */
     [self.modelController newViewControllerAtIndex:0 storyboard:self.storyboard];
-    ScreenViewController *startingViewController = [self.modelController viewControllerAtIndex:5 storyboard:self.storyboard];
+    ScreenViewController *startingViewController = [self.modelController viewControllerAtIndex:1 storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
 
@@ -60,7 +60,7 @@
     self.pageViewController.view.frame = self.view.bounds;
     
     [self.pageViewController didMoveToParentViewController:self];
-/*
+
     // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
     
@@ -71,7 +71,7 @@
             [self.view removeGestureRecognizer:recognizer];
         }
     }
-*/    
+   
     //NSLog(@"GESTURE RECOGNIZERS: %@", self.view.gestureRecognizers);
 }
 
@@ -142,18 +142,8 @@
 */
 
 -(void) disablePan{
-    // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
-    self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
     
-    //REMOVE TAP-GESTURE-RECOGNIZER
-    for (UIGestureRecognizer *recognizer in self.pageViewController.gestureRecognizers) {
-        if ([recognizer isKindOfClass:[UITapGestureRecognizer class]]) {
-            [self.pageViewController.view removeGestureRecognizer:recognizer];
-            [self.view removeGestureRecognizer:recognizer];
-        }
-    }
-    
-    NSLog(@"GESTURE RECOGNIZERS before disabled: %@", self.pageViewController.gestureRecognizers);
+    //NSLog(@"GESTURE RECOGNIZERS before disabled: %@", self.pageViewController.gestureRecognizers);
     for (UIGestureRecognizer *recognizer in self.pageViewController.gestureRecognizers) {
         if ([recognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
             recognizer.enabled = NO;

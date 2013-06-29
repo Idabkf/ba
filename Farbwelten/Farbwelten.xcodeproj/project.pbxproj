@@ -101,6 +101,7 @@
 		6885950A177F3BEB002EBB97 /* Screen21-Korken08-eckig.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FF177F3B92002EBB97 /* Screen21-Korken08-eckig.png */; };
 		6885950B177F3BEB002EBB97 /* Screen21-Korken09-riesig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68859500177F3BAE002EBB97 /* Screen21-Korken09-riesig.png */; };
 		6885950C177F3BEB002EBB97 /* Screen21-Korken10-winzig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68859501177F3BCB002EBB97 /* Screen21-Korken10-winzig.png */; };
+		68859515177F4493002EBB97 /* ScreenTwentyoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */; };
 		68B7BE1317589E2A005D1C5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1217589E2A005D1C5B /* UIKit.framework */; };
 		68B7BE1517589E2A005D1C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1417589E2A005D1C5B /* Foundation.framework */; };
 		68B7BE1717589E2A005D1C5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1617589E2A005D1C5B /* CoreGraphics.framework */; };
@@ -262,6 +263,8 @@
 		688594FF177F3B92002EBB97 /* Screen21-Korken08-eckig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken08-eckig.png"; sourceTree = "<group>"; };
 		68859500177F3BAE002EBB97 /* Screen21-Korken09-riesig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken09-riesig.png"; sourceTree = "<group>"; };
 		68859501177F3BCB002EBB97 /* Screen21-Korken10-winzig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken10-winzig.png"; sourceTree = "<group>"; };
+		68859513177F4490002EBB97 /* ScreenTwentyoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyoneViewController.h; sourceTree = "<group>"; };
+		68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyoneViewController.m; sourceTree = "<group>"; };
 		68B7BE0F17589E2A005D1C5B /* Farbwelten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farbwelten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B7BE1217589E2A005D1C5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68B7BE1417589E2A005D1C5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -433,6 +436,8 @@
 				688594ED177F3A3C002EBB97 /* ScreenNineteenViewController.m */,
 				688594F4177F3AD6002EBB97 /* ScreenTwentyViewController.h */,
 				688594F5177F3AD7002EBB97 /* ScreenTwentyViewController.m */,
+				68859513177F4490002EBB97 /* ScreenTwentyoneViewController.h */,
+				68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */,
 			);
 			path = Farbwelten;
 			sourceTree = "<group>";
@@ -770,6 +775,7 @@
 				688594EB177F3925002EBB97 /* ScreenEighteenViewController.m in Sources */,
 				688594EE177F3A3E002EBB97 /* ScreenNineteenViewController.m in Sources */,
 				688594F6177F3AD9002EBB97 /* ScreenTwentyViewController.m in Sources */,
+				68859515177F4493002EBB97 /* ScreenTwentyoneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

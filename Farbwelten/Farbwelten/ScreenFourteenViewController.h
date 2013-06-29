@@ -10,4 +10,11 @@
 
 @interface ScreenFourteenViewController : ScreenViewController
 
+@property UIImageView *backgroundView;
+@property CGRect rectLeft;
+@property CGRect rectRight;
+
+@property UIImageView *ubootView;
+@property UIImageView *labyrinthView;
+
 @end

@@ -32,7 +32,7 @@
     if (self) {
         
         self.numberOfScreens = 24;
-        self.numberOfFinishedScreens = 15;
+        self.numberOfFinishedScreens = 16;
         
         // Create the data model.
         /*_pageData = [NSArray array];
@@ -46,11 +46,11 @@
         }
         
         
-        self.screenViews = [[NSMutableArray alloc] init];
+        self.screenViews = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
-
+/*
 - (DataViewController *)dataViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {   
     // Return the data view controller for the given index.
@@ -63,7 +63,7 @@
     dataViewController.dataObject = self.pageData[index];
     return dataViewController;
 }
-
+*/
 - (ScreenViewController *)newViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
 {
     /*
@@ -82,36 +82,49 @@
     
     /*The 10th screen is the same as the 17th and the 24th. In each case -1 because screen 5 is missing and -1 because starting with 0*/
     if (index == 15) {
-        ScreenViewController *screenViewController = [self.screenViews objectAtIndex:8];
+        NSLog(@"SCREEN 17");
+        if ([self.screenViews objectForKey:@"15"]!=nil) {
+            return [self.screenViews objectForKey:@"15"];
+        }
+        ScreenViewController *screenViewController = [self.screenViews objectForKey:@"8"];
+        
+        if (!screenViewController) {
+            screenViewController = [storyboard instantiateViewControllerWithIdentifier:@"8"];
+            [self.screenViews setValue:screenViewController forKey:@"8"];
+        }
+        
         screenViewController.dataObject = self.pageData[index];
         screenViewController.rootViewController = self.rootViewController;
-        [self.screenViews addObject:screenViewController];
+        [self.screenViews setValue:screenViewController forKey:@"15"];
         return screenViewController;
     }
     
     if (index == 22) {
-        ScreenViewController *screenViewController = [self.screenViews objectAtIndex:15];
+        if ([self.screenViews objectForKey:@"22"]!=nil) {
+            return [self.screenViews objectForKey:@"22"];
+        }
+        ScreenViewController *screenViewController = [self.screenViews objectForKey:@"15"];
         screenViewController.dataObject = self.pageData[index];
         screenViewController.rootViewController = self.rootViewController;
-        [self.screenViews addObject:screenViewController];
+        [self.screenViews setValue:screenViewController forKey:@"22"];
         return screenViewController;
     }
     
     ScreenViewController *screenViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
     screenViewController.dataObject = self.pageData[index];
     screenViewController.rootViewController = self.rootViewController;
-    [self.screenViews addObject:screenViewController];
+    [self.screenViews setValue:screenViewController forKey:[NSString stringWithFormat:@"%i",index]];
     return screenViewController;
 }
 
 - (ScreenViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard{
     
     if (index>self.numberOfFinishedScreens) {
-        return [self.screenViews objectAtIndex:1];
+        return [self.screenViews objectForKey:@"1"];
     }
     
     if (self.screenViews.count>index) {
-        return [self.screenViews objectAtIndex:index];
+        return [self.screenViews objectForKey:[NSString stringWithFormat:@"%i",index]];
     }
     else return [self newViewControllerAtIndex:index storyboard:storyboard];
 }

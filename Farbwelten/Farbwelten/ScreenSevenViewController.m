@@ -34,7 +34,6 @@
     self.rectRight = CGRectMake(924.0f, 0.0f, 100.0f, 768.0f);
     
     self.countFinishedMushrooms = 0;
-    self.panEnabled = YES;
     
     // Adjust the image
     
@@ -58,11 +57,9 @@
     
     
     [self.view addSubview:self.backgroundView];
-    
-    self.receiveTouch = false;
-    
+
    // [self loadImageViews];
-    self.screenFlag = true;
+    //self.screenFlag = true;
     //[self setButton];
     [self setMushrooms];
     
@@ -84,6 +81,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
 -(void)loadImageViews{
     
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen07-RAETSEL-1-1" ofType:@"png"];
@@ -148,6 +146,7 @@
         [self.currentView addSubview:self.buttonView];
     }
 }
+*/
 -(NSMutableArray*) setPositions{
     NSMutableArray *positions = [[NSMutableArray alloc] init];
     
@@ -313,7 +312,7 @@
     }
     
 }
-
+/*
 - (void)handleTap:(UITapGestureRecognizer *)recognizer{
     if (recognizer.view == self.buttonView) {
         NSLog(@"Button TAPPED");
@@ -329,7 +328,7 @@
         }
     }
 }
-
+*/
 -(void)handlePan:(UIPanGestureRecognizer *) recognizer{
     
     //move center of view
@@ -371,6 +370,7 @@
             NSLog(@"GETROFFEN");
         }
     }
+    /*
     if (CGRectContainsPoint(self.buttonView.frame, [recognizer locationInView:self.view])) {
         if (self.screenFlag) {
             [self setCurrentScreenView:self.screen2View];
@@ -387,7 +387,7 @@
             self.screenFlag = true;
         }
     }
-    
+    */
 }
 
 - (void)handleSwipe:(UISwipeGestureRecognizer *)recognizer{

@@ -19,9 +19,9 @@
 @property int numberOfScreens;
 @property int numberOfFinishedScreens;
 
-@property NSMutableArray *screenViews;
+@property NSMutableDictionary *screenViews;
 
-- (DataViewController *)dataViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+//- (DataViewController *)dataViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (ScreenViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (ScreenViewController *)newViewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController;

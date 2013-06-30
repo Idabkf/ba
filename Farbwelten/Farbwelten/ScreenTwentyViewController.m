@@ -27,12 +27,54 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"Screen19-Sandkind" ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:pathString];
+    self.kindView = [[UIImageView alloc]initWithImage:image];
+    CGRect rect = CGRectMake(216.0f, 227.5f, image.size.width/2, image.size.height/2);
+    self.kindView.frame = rect;
+    [self.kindView setUserInteractionEnabled:YES];
+    [self.view addSubview:self.kindView];
+    
+    pathString = [[NSBundle mainBundle] pathForResource:@"Screen19-Sandsturm" ofType:@"png"];
+    image = [UIImage imageWithContentsOfFile:pathString];
+    self.sturmView = [[UIImageView alloc]initWithImage:image];
+    rect = CGRectMake(0.0f, 0.0f, image.size.width/2, image.size.height/2);
+    self.sturmView.frame = rect;
+    [self.sturmView setUserInteractionEnabled:YES];
+    [self.view addSubview:self.sturmView];
+    
+    [self animateStorm];
 }
+
+/*Umblättern immer möglich
+ -(void) viewDidAppear:(BOOL)animated{
+ [super viewDidAppear:animated];
+ 
+ if (self.panEnabled) {
+ //disable pageViews recognizer
+ [self.rootViewController disablePan];
+ self.panEnabled = NO;
+ }
+ }
+ */
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) animateStorm{
+    self.sturmView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 4.0f, 0.0f);
+    [UIImageView animateWithDuration:1.0
+                               delay:0.0
+                             options: UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat
+                          animations:^{
+                              self.sturmView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, -4.0f, 0.0f);
+                          }completion:^(BOOL finished){
+                              self.sturmView.transform = CGAffineTransformIdentity;
+                          }];
 }
 
 @end

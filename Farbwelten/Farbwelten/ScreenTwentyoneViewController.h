@@ -7,7 +7,15 @@
 //
 
 #import "ScreenViewController.h"
+#import "EraserView.h"
 
 @interface ScreenTwentyoneViewController : ScreenViewController
+
+@property UIImageView *backgroundView;
+@property EraserView *sandView;
+@property CGRect rectLeft;
+@property CGRect rectRight;
+
+
 
 @end

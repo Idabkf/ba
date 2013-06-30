@@ -48,12 +48,12 @@
     UISwipeGestureRecognizer *swipeLRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     swipeLRecognizer.delegate = self;
     swipeLRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.buttonView addGestureRecognizer:swipeLRecognizer];
+    [self.view addGestureRecognizer:swipeLRecognizer];
     
     UISwipeGestureRecognizer *swipeRRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
     swipeRRecognizer.delegate = self;
     swipeRRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.buttonView addGestureRecognizer:swipeRRecognizer];
+    [self.view addGestureRecognizer:swipeRRecognizer];
     
     
     [self.view addSubview:self.backgroundView];

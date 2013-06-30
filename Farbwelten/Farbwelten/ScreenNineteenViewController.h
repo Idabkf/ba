@@ -10,4 +10,9 @@
 
 @interface ScreenNineteenViewController : ScreenViewController
 
+@property UIImageView *sturmView;
+
+@property UIImageView *groelmView;
+@property UIImageView *kindView;
+
 @end

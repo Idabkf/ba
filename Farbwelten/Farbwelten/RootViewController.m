@@ -42,8 +42,8 @@
     /*
     DataViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
      */
-    [self.modelController newViewControllerAtIndex:0 storyboard:self.storyboard];
-    ScreenViewController *startingViewController = [self.modelController viewControllerAtIndex:12 storyboard:self.storyboard];
+    //[self.modelController newViewControllerAtIndex:0 storyboard:self.storyboard];
+    ScreenViewController *startingViewController = [self.modelController newViewControllerAtIndex:19 storyboard:self.storyboard];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:NULL];
 
@@ -150,7 +150,7 @@
         }
     }
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    NSLog(@"GESTURE RECOGNIZERS disabled: %@", self.view.gestureRecognizers);
+    //NSLog(@"GESTURE RECOGNIZERS disabled: %@", self.view.gestureRecognizers);
 }
 
 -(void) enablePan{
@@ -160,6 +160,6 @@
         }
     }
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
-    NSLog(@"GESTURE RECOGNIZERS enabled: %@", self.view.gestureRecognizers);
+    //NSLog(@"GESTURE RECOGNIZERS enabled: %@", self.view.gestureRecognizers);
 }
 @end

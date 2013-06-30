@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68288FB417802D530092C4A7 /* Screen21-Korken01-gelbgruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FA717802D520092C4A7 /* Screen21-Korken01-gelbgruen.png */; };
+		68288FB517802D530092C4A7 /* Screen21-Korken02-kanister.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FA817802D520092C4A7 /* Screen21-Korken02-kanister.png */; };
+		68288FB617802D530092C4A7 /* Screen21-Korken03-weinflaschemustert.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FA917802D520092C4A7 /* Screen21-Korken03-weinflaschemustert.png */; };
+		68288FB717802D530092C4A7 /* Screen21-Korken04-zaubertrank.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAA17802D520092C4A7 /* Screen21-Korken04-zaubertrank.png */; };
+		68288FB817802D530092C4A7 /* Screen21-Korken05-blaugruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAB17802D520092C4A7 /* Screen21-Korken05-blaugruen.png */; };
+		68288FB917802D530092C4A7 /* Screen21-Korken06-gelbgruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAC17802D520092C4A7 /* Screen21-Korken06-gelbgruen.png */; };
+		68288FBA17802D530092C4A7 /* Screen21-Korken07-langduenn.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAD17802D520092C4A7 /* Screen21-Korken07-langduenn.png */; };
+		68288FBB17802D530092C4A7 /* Screen21-Korken08-eckig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAE17802D520092C4A7 /* Screen21-Korken08-eckig.png */; };
+		68288FBC17802D530092C4A7 /* Screen21-Korken09-riesig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FAF17802D520092C4A7 /* Screen21-Korken09-riesig.png */; };
+		68288FBD17802D530092C4A7 /* Screen21-Korken10-winzig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FB017802D520092C4A7 /* Screen21-Korken10-winzig.png */; };
+		68288FBE17802D530092C4A7 /* Screen21-RAETSEL-3-vIda_mitKorken.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FB117802D520092C4A7 /* Screen21-RAETSEL-3-vIda_mitKorken.png */; };
+		68288FBF17802D530092C4A7 /* Screen21-RAETSEL-3-vIda_ohneKorken.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FB217802D530092C4A7 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */; };
+		68288FC6178036D30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FC5178036D30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand.png */; };
+		68288FC9178038A40092C4A7 /* ScreenTwentytwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68288FC8178038A30092C4A7 /* ScreenTwentytwoViewController.m */; };
+		68288FCB178050C80092C4A7 /* Screen21-Eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FCA178050C80092C4A7 /* Screen21-Eraser.png */; };
+		68288FD117805E540092C4A7 /* EraserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68288FD017805E540092C4A7 /* EraserView.m */; };
+		68288FD3178065A30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_k.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FD2178065A30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_k.png */; };
+		68288FD5178066120092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_kk.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FD4178066110092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */; };
+		68288FD717806DE50092C4A7 /* Screen21-Eraser2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68288FD617806DE50092C4A7 /* Screen21-Eraser2.png */; };
 		6834F53C175D3F760063AEE1 /* Screen04a-Fressgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6834F537175D3F760063AEE1 /* Screen04a-Fressgroelm.png */; };
 		6834F53D175D3F760063AEE1 /* Screen04a+b+c.png in Resources */ = {isa = PBXBuildFile; fileRef = 6834F538175D3F760063AEE1 /* Screen04a+b+c.png */; };
 		6834F53E175D3F760063AEE1 /* Screen04b-Schluckgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6834F539175D3F760063AEE1 /* Screen04b-Schluckgroelm.png */; };
@@ -91,17 +110,11 @@
 		688594EE177F3A3E002EBB97 /* ScreenNineteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688594ED177F3A3C002EBB97 /* ScreenNineteenViewController.m */; };
 		688594F6177F3AD9002EBB97 /* ScreenTwentyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688594F5177F3AD7002EBB97 /* ScreenTwentyViewController.m */; };
 		68859502177F3BEB002EBB97 /* Screen20-SandsturmA-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594F7177F3B39002EBB97 /* Screen20-SandsturmA-BG.png */; };
-		68859503177F3BEB002EBB97 /* Screen21-Korken01-gelbgruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594F8177F3B3B002EBB97 /* Screen21-Korken01-gelbgruen.png */; };
-		68859504177F3BEB002EBB97 /* Screen21-Korken02-kanister.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594F9177F3B40002EBB97 /* Screen21-Korken02-kanister.png */; };
-		68859505177F3BEB002EBB97 /* Screen21-Korken03-weinflaschemustert.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FA177F3B48002EBB97 /* Screen21-Korken03-weinflaschemustert.png */; };
-		68859506177F3BEB002EBB97 /* Screen21-Korken04-zaubertrank.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FB177F3B52002EBB97 /* Screen21-Korken04-zaubertrank.png */; };
-		68859507177F3BEB002EBB97 /* Screen21-Korken05-blaugruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FC177F3B5D002EBB97 /* Screen21-Korken05-blaugruen.png */; };
-		68859508177F3BEB002EBB97 /* Screen21-Korken06-gelbgruen.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FD177F3B69002EBB97 /* Screen21-Korken06-gelbgruen.png */; };
-		68859509177F3BEB002EBB97 /* Screen21-Korken07-langduenn.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FE177F3B7C002EBB97 /* Screen21-Korken07-langduenn.png */; };
-		6885950A177F3BEB002EBB97 /* Screen21-Korken08-eckig.png in Resources */ = {isa = PBXBuildFile; fileRef = 688594FF177F3B92002EBB97 /* Screen21-Korken08-eckig.png */; };
-		6885950B177F3BEB002EBB97 /* Screen21-Korken09-riesig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68859500177F3BAE002EBB97 /* Screen21-Korken09-riesig.png */; };
-		6885950C177F3BEB002EBB97 /* Screen21-Korken10-winzig.png in Resources */ = {isa = PBXBuildFile; fileRef = 68859501177F3BCB002EBB97 /* Screen21-Korken10-winzig.png */; };
 		68859515177F4493002EBB97 /* ScreenTwentyoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */; };
+		6885952217801E0B002EBB97 /* Screen19-Sandgroelm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6885951E17801DEE002EBB97 /* Screen19-Sandgroelm.png */; };
+		6885952317801E0B002EBB97 /* Screen19-Sandkind.png in Resources */ = {isa = PBXBuildFile; fileRef = 6885951F17801DF0002EBB97 /* Screen19-Sandkind.png */; };
+		6885952417801E0B002EBB97 /* Screen19-Sandsturm-BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6885952017801DF5002EBB97 /* Screen19-Sandsturm-BG.png */; };
+		6885952517801E0B002EBB97 /* Screen19-Sandsturm.png in Resources */ = {isa = PBXBuildFile; fileRef = 6885952117801DFE002EBB97 /* Screen19-Sandsturm.png */; };
 		68B7BE1317589E2A005D1C5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1217589E2A005D1C5B /* UIKit.framework */; };
 		68B7BE1517589E2A005D1C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1417589E2A005D1C5B /* Foundation.framework */; };
 		68B7BE1717589E2A005D1C5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B7BE1617589E2A005D1C5B /* CoreGraphics.framework */; };
@@ -155,6 +168,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68288FA717802D520092C4A7 /* Screen21-Korken01-gelbgruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken01-gelbgruen.png"; sourceTree = "<group>"; };
+		68288FA817802D520092C4A7 /* Screen21-Korken02-kanister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken02-kanister.png"; sourceTree = "<group>"; };
+		68288FA917802D520092C4A7 /* Screen21-Korken03-weinflaschemustert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken03-weinflaschemustert.png"; sourceTree = "<group>"; };
+		68288FAA17802D520092C4A7 /* Screen21-Korken04-zaubertrank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken04-zaubertrank.png"; sourceTree = "<group>"; };
+		68288FAB17802D520092C4A7 /* Screen21-Korken05-blaugruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken05-blaugruen.png"; sourceTree = "<group>"; };
+		68288FAC17802D520092C4A7 /* Screen21-Korken06-gelbgruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken06-gelbgruen.png"; sourceTree = "<group>"; };
+		68288FAD17802D520092C4A7 /* Screen21-Korken07-langduenn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken07-langduenn.png"; sourceTree = "<group>"; };
+		68288FAE17802D520092C4A7 /* Screen21-Korken08-eckig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken08-eckig.png"; sourceTree = "<group>"; };
+		68288FAF17802D520092C4A7 /* Screen21-Korken09-riesig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken09-riesig.png"; sourceTree = "<group>"; };
+		68288FB017802D520092C4A7 /* Screen21-Korken10-winzig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken10-winzig.png"; sourceTree = "<group>"; };
+		68288FB117802D520092C4A7 /* Screen21-RAETSEL-3-vIda_mitKorken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_mitKorken.png"; sourceTree = "<group>"; };
+		68288FB217802D530092C4A7 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_ohneKorken.png"; sourceTree = "<group>"; };
+		68288FC5178036D30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand.png"; sourceTree = "<group>"; };
+		68288FC7178038A30092C4A7 /* ScreenTwentytwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentytwoViewController.h; sourceTree = "<group>"; };
+		68288FC8178038A30092C4A7 /* ScreenTwentytwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentytwoViewController.m; sourceTree = "<group>"; };
+		68288FCA178050C80092C4A7 /* Screen21-Eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Eraser.png"; sourceTree = "<group>"; };
+		68288FCF17805E540092C4A7 /* EraserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EraserView.h; sourceTree = "<group>"; };
+		68288FD017805E540092C4A7 /* EraserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EraserView.m; sourceTree = "<group>"; };
+		68288FD2178065A30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand_k.png"; sourceTree = "<group>"; };
+		68288FD4178066110092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-RAETSEL-3-vIda_Sand_kk.png"; sourceTree = "<group>"; };
+		68288FD617806DE50092C4A7 /* Screen21-Eraser2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Eraser2.png"; sourceTree = "<group>"; };
 		6834F537175D3F760063AEE1 /* Screen04a-Fressgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04a-Fressgroelm.png"; sourceTree = "<group>"; };
 		6834F538175D3F760063AEE1 /* Screen04a+b+c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04a+b+c.png"; sourceTree = "<group>"; };
 		6834F539175D3F760063AEE1 /* Screen04b-Schluckgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen04b-Schluckgroelm.png"; sourceTree = "<group>"; };
@@ -246,25 +280,15 @@
 		688594EA177F3922002EBB97 /* ScreenEighteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenEighteenViewController.m; sourceTree = "<group>"; };
 		688594EC177F3A3A002EBB97 /* ScreenNineteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenNineteenViewController.h; sourceTree = "<group>"; };
 		688594ED177F3A3C002EBB97 /* ScreenNineteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNineteenViewController.m; sourceTree = "<group>"; };
-		688594EF177F3A9D002EBB97 /* Screen19-Sandgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandgroelm.png"; sourceTree = "<group>"; };
-		688594F0177F3A9E002EBB97 /* Screen19-Sandkind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandkind.png"; sourceTree = "<group>"; };
-		688594F1177F3A9E002EBB97 /* Screen19-Sandsturm-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm-BG.png"; sourceTree = "<group>"; };
-		688594F3177F3AA0002EBB97 /* Screen19-Sandsturm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm.png"; sourceTree = "<group>"; };
 		688594F4177F3AD6002EBB97 /* ScreenTwentyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyViewController.h; sourceTree = "<group>"; };
 		688594F5177F3AD7002EBB97 /* ScreenTwentyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyViewController.m; sourceTree = "<group>"; };
 		688594F7177F3B39002EBB97 /* Screen20-SandsturmA-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen20-SandsturmA-BG.png"; sourceTree = "<group>"; };
-		688594F8177F3B3B002EBB97 /* Screen21-Korken01-gelbgruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken01-gelbgruen.png"; sourceTree = "<group>"; };
-		688594F9177F3B40002EBB97 /* Screen21-Korken02-kanister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken02-kanister.png"; sourceTree = "<group>"; };
-		688594FA177F3B48002EBB97 /* Screen21-Korken03-weinflaschemustert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken03-weinflaschemustert.png"; sourceTree = "<group>"; };
-		688594FB177F3B52002EBB97 /* Screen21-Korken04-zaubertrank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken04-zaubertrank.png"; sourceTree = "<group>"; };
-		688594FC177F3B5D002EBB97 /* Screen21-Korken05-blaugruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken05-blaugruen.png"; sourceTree = "<group>"; };
-		688594FD177F3B69002EBB97 /* Screen21-Korken06-gelbgruen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken06-gelbgruen.png"; sourceTree = "<group>"; };
-		688594FE177F3B7C002EBB97 /* Screen21-Korken07-langduenn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken07-langduenn.png"; sourceTree = "<group>"; };
-		688594FF177F3B92002EBB97 /* Screen21-Korken08-eckig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken08-eckig.png"; sourceTree = "<group>"; };
-		68859500177F3BAE002EBB97 /* Screen21-Korken09-riesig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken09-riesig.png"; sourceTree = "<group>"; };
-		68859501177F3BCB002EBB97 /* Screen21-Korken10-winzig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen21-Korken10-winzig.png"; sourceTree = "<group>"; };
 		68859513177F4490002EBB97 /* ScreenTwentyoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTwentyoneViewController.h; sourceTree = "<group>"; };
 		68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenTwentyoneViewController.m; sourceTree = "<group>"; };
+		6885951E17801DEE002EBB97 /* Screen19-Sandgroelm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandgroelm.png"; sourceTree = "<group>"; };
+		6885951F17801DF0002EBB97 /* Screen19-Sandkind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandkind.png"; sourceTree = "<group>"; };
+		6885952017801DF5002EBB97 /* Screen19-Sandsturm-BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm-BG.png"; sourceTree = "<group>"; };
+		6885952117801DFE002EBB97 /* Screen19-Sandsturm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen19-Sandsturm.png"; sourceTree = "<group>"; };
 		68B7BE0F17589E2A005D1C5B /* Farbwelten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Farbwelten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B7BE1217589E2A005D1C5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68B7BE1417589E2A005D1C5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -438,6 +462,10 @@
 				688594F5177F3AD7002EBB97 /* ScreenTwentyViewController.m */,
 				68859513177F4490002EBB97 /* ScreenTwentyoneViewController.h */,
 				68859514177F4491002EBB97 /* ScreenTwentyoneViewController.m */,
+				68288FCF17805E540092C4A7 /* EraserView.h */,
+				68288FD017805E540092C4A7 /* EraserView.m */,
+				68288FC7178038A30092C4A7 /* ScreenTwentytwoViewController.h */,
+				68288FC8178038A30092C4A7 /* ScreenTwentytwoViewController.m */,
 			);
 			path = Farbwelten;
 			sourceTree = "<group>";
@@ -534,21 +562,28 @@
 				688594D8177F3368002EBB97 /* Screen18a-Klettergroelm.png */,
 				688594D9177F3368002EBB97 /* Screen18b-Groelmgeschluckt.png */,
 				688594DA177F3369002EBB97 /* Screen18c-Groelmausspuck.png */,
-				688594EF177F3A9D002EBB97 /* Screen19-Sandgroelm.png */,
-				688594F0177F3A9E002EBB97 /* Screen19-Sandkind.png */,
-				688594F1177F3A9E002EBB97 /* Screen19-Sandsturm-BG.png */,
-				688594F3177F3AA0002EBB97 /* Screen19-Sandsturm.png */,
+				6885951E17801DEE002EBB97 /* Screen19-Sandgroelm.png */,
+				6885951F17801DF0002EBB97 /* Screen19-Sandkind.png */,
+				6885952017801DF5002EBB97 /* Screen19-Sandsturm-BG.png */,
+				6885952117801DFE002EBB97 /* Screen19-Sandsturm.png */,
 				688594F7177F3B39002EBB97 /* Screen20-SandsturmA-BG.png */,
-				688594F8177F3B3B002EBB97 /* Screen21-Korken01-gelbgruen.png */,
-				688594F9177F3B40002EBB97 /* Screen21-Korken02-kanister.png */,
-				688594FA177F3B48002EBB97 /* Screen21-Korken03-weinflaschemustert.png */,
-				688594FB177F3B52002EBB97 /* Screen21-Korken04-zaubertrank.png */,
-				688594FC177F3B5D002EBB97 /* Screen21-Korken05-blaugruen.png */,
-				688594FD177F3B69002EBB97 /* Screen21-Korken06-gelbgruen.png */,
-				688594FE177F3B7C002EBB97 /* Screen21-Korken07-langduenn.png */,
-				688594FF177F3B92002EBB97 /* Screen21-Korken08-eckig.png */,
-				68859500177F3BAE002EBB97 /* Screen21-Korken09-riesig.png */,
-				68859501177F3BCB002EBB97 /* Screen21-Korken10-winzig.png */,
+				68288FCA178050C80092C4A7 /* Screen21-Eraser.png */,
+				68288FD617806DE50092C4A7 /* Screen21-Eraser2.png */,
+				68288FA717802D520092C4A7 /* Screen21-Korken01-gelbgruen.png */,
+				68288FA817802D520092C4A7 /* Screen21-Korken02-kanister.png */,
+				68288FA917802D520092C4A7 /* Screen21-Korken03-weinflaschemustert.png */,
+				68288FAA17802D520092C4A7 /* Screen21-Korken04-zaubertrank.png */,
+				68288FAB17802D520092C4A7 /* Screen21-Korken05-blaugruen.png */,
+				68288FAC17802D520092C4A7 /* Screen21-Korken06-gelbgruen.png */,
+				68288FAD17802D520092C4A7 /* Screen21-Korken07-langduenn.png */,
+				68288FAE17802D520092C4A7 /* Screen21-Korken08-eckig.png */,
+				68288FAF17802D520092C4A7 /* Screen21-Korken09-riesig.png */,
+				68288FB017802D520092C4A7 /* Screen21-Korken10-winzig.png */,
+				68288FB117802D520092C4A7 /* Screen21-RAETSEL-3-vIda_mitKorken.png */,
+				68288FB217802D530092C4A7 /* Screen21-RAETSEL-3-vIda_ohneKorken.png */,
+				68288FC5178036D30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand.png */,
+				68288FD2178065A30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_k.png */,
+				68288FD4178066110092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_kk.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -729,16 +764,27 @@
 				688594E0177F3369002EBB97 /* Screen18c-Groelmausspuck.png in Resources */,
 				688594E8177F37AB002EBB97 /* Screen18-Kind.png in Resources */,
 				68859502177F3BEB002EBB97 /* Screen20-SandsturmA-BG.png in Resources */,
-				68859503177F3BEB002EBB97 /* Screen21-Korken01-gelbgruen.png in Resources */,
-				68859504177F3BEB002EBB97 /* Screen21-Korken02-kanister.png in Resources */,
-				68859505177F3BEB002EBB97 /* Screen21-Korken03-weinflaschemustert.png in Resources */,
-				68859506177F3BEB002EBB97 /* Screen21-Korken04-zaubertrank.png in Resources */,
-				68859507177F3BEB002EBB97 /* Screen21-Korken05-blaugruen.png in Resources */,
-				68859508177F3BEB002EBB97 /* Screen21-Korken06-gelbgruen.png in Resources */,
-				68859509177F3BEB002EBB97 /* Screen21-Korken07-langduenn.png in Resources */,
-				6885950A177F3BEB002EBB97 /* Screen21-Korken08-eckig.png in Resources */,
-				6885950B177F3BEB002EBB97 /* Screen21-Korken09-riesig.png in Resources */,
-				6885950C177F3BEB002EBB97 /* Screen21-Korken10-winzig.png in Resources */,
+				6885952217801E0B002EBB97 /* Screen19-Sandgroelm.png in Resources */,
+				6885952317801E0B002EBB97 /* Screen19-Sandkind.png in Resources */,
+				6885952417801E0B002EBB97 /* Screen19-Sandsturm-BG.png in Resources */,
+				6885952517801E0B002EBB97 /* Screen19-Sandsturm.png in Resources */,
+				68288FB417802D530092C4A7 /* Screen21-Korken01-gelbgruen.png in Resources */,
+				68288FB517802D530092C4A7 /* Screen21-Korken02-kanister.png in Resources */,
+				68288FB617802D530092C4A7 /* Screen21-Korken03-weinflaschemustert.png in Resources */,
+				68288FB717802D530092C4A7 /* Screen21-Korken04-zaubertrank.png in Resources */,
+				68288FB817802D530092C4A7 /* Screen21-Korken05-blaugruen.png in Resources */,
+				68288FB917802D530092C4A7 /* Screen21-Korken06-gelbgruen.png in Resources */,
+				68288FBA17802D530092C4A7 /* Screen21-Korken07-langduenn.png in Resources */,
+				68288FBB17802D530092C4A7 /* Screen21-Korken08-eckig.png in Resources */,
+				68288FBC17802D530092C4A7 /* Screen21-Korken09-riesig.png in Resources */,
+				68288FBD17802D530092C4A7 /* Screen21-Korken10-winzig.png in Resources */,
+				68288FBE17802D530092C4A7 /* Screen21-RAETSEL-3-vIda_mitKorken.png in Resources */,
+				68288FBF17802D530092C4A7 /* Screen21-RAETSEL-3-vIda_ohneKorken.png in Resources */,
+				68288FC6178036D30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand.png in Resources */,
+				68288FCB178050C80092C4A7 /* Screen21-Eraser.png in Resources */,
+				68288FD3178065A30092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_k.png in Resources */,
+				68288FD5178066120092C4A7 /* Screen21-RAETSEL-3-vIda_Sand_kk.png in Resources */,
+				68288FD717806DE50092C4A7 /* Screen21-Eraser2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +822,8 @@
 				688594EE177F3A3E002EBB97 /* ScreenNineteenViewController.m in Sources */,
 				688594F6177F3AD9002EBB97 /* ScreenTwentyViewController.m in Sources */,
 				68859515177F4493002EBB97 /* ScreenTwentyoneViewController.m in Sources */,
+				68288FC9178038A40092C4A7 /* ScreenTwentytwoViewController.m in Sources */,
+				68288FD117805E540092C4A7 /* EraserView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

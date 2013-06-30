@@ -10,4 +10,7 @@
 
 @interface ScreenTwentyViewController : ScreenViewController
 
+@property UIImageView *sturmView;
+@property UIImageView *kindView;
+
 @end

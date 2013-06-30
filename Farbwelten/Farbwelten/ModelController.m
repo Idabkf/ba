@@ -32,7 +32,7 @@
     if (self) {
         
         self.numberOfScreens = 24;
-        self.numberOfFinishedScreens = 16;
+        self.numberOfFinishedScreens = 22;
         
         // Create the data model.
         /*_pageData = [NSArray array];
